@@ -5,8 +5,9 @@ end
 
 
 def sort_array_desc(array)
-  sorted_array = array.sort
-  sorted_array.reverse
+  array.sort do | left, right|
+    right <=> left
+  end
 end
 
 def sort_array_char_count(array)
